@@ -1,0 +1,45 @@
+body {
+    background-color: #2a2a2a;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    left: 0;
+    border-bottom: white solid 5px;
+    height: 200px;
+    width: 100%;
+
+}
+
+#logo1 {
+
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-top: 20px;
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#cubeRose {
+    margin: auto;
+    padding: 20px;
+}
+
+#cubeTurquoise {
+    margin: auto;
+    padding:20px;
+}
+
+header p {
+
+    color: #32efc9;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 75px;
+
+}
