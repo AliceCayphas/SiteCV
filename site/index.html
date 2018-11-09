@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <title>Alice Cayphas - Web Application Developer Junior</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
@@ -17,13 +19,28 @@
 
         <p>Cayphas</p>
 
+        <div id="ligne"></div>
+
     </header>
 
-    <nav>
-        <img src="assets/transRose.png" id="cubeRose" alt="cubeRose" width="400" height="400">
+    <h1>Web Developer Junior</h1>
 
-        <img src="assets/transTurq.png" id="cubeTurquoise" alt="cubeTurquoise" width="400" height="400">
+    <nav>
+        <section>
+            <img src="assets/transBlancFr.png" onmouseover="this.src='assets/transRose.png'" onmouseout="this.src='assets/transBlancFr.png'" class="cubeLangue" alt="cubeRoseFr" width="400" height="400">
+
+            <p>Français</p>
+        </section>
+
+        <section>
+
+            <img src="assets/transBlancEn.png" onmouseover="this.src='assets/transRoseEn.png'" onmouseout="this.src='assets/transBlancEn.png'" class=cubeLangue alt="cubeRoseEn" width="400" height="400">
+
+            <p>English</p>
+
+        </section>
     </nav>
+
 
 
 </body>
