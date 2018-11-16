@@ -8,9 +8,9 @@ body {
 
 @media (min-width:800px) {
     #logo1 {
-        padding-right: 80px;
-        padding-left: 80px;
-        padding-top: 20px;
+        margin-right: 80px;
+        margin-left: 80px;
+        margin-top: 20px;
     }
 
     nav {
@@ -24,23 +24,47 @@ body {
 header {
     display: flex;
     justify-content: center;
-    border-bottom: solid white 5px;
     height: 200px;
     width: 100%;
 
 }
 
-#ligne {
+/*Ligne blanche horizontale*/
 
-    width: 0px;
-    height: 5px;
-    background-color: #ffffff;
-    transition-property: all;
-    transition-duration: 3s;
-    transition-delay: 1s;
-    transition-timing-function: linear;
+.barHorz {
+    position: absolute;
+    content: '';
+    width: 0; 
+    height: 5px; 
+} 
+
+.barLeft2 {
+    left: 0; 
+    background: white;
+    transform-origin: left center;
+    animation: animBarHorz 5s ease forwards;
+}
 
 
+@keyframes animBar {
+    0% { height: 0 }
+    100% { height: 500px; }
+}
+
+@keyframes animBarHorz {
+    0% { width: 0 }
+    100% { width: 100%; }
+}
+
+*,*::before,*::after { box-sizing: border-box; }
+html { height: 100%; }
+h1,h2,h3 { font-family: 'Crimson Text', sans-serif; font-weight: 100; }
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background: radial-gradient(#121212, #000); 
+    height: 100%;
+    color: #aaa;
+    padding: 100px;
 }
 
 
