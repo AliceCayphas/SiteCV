@@ -64,10 +64,8 @@ body {
     background: radial-gradient(#121212, #000); 
     height: 100%;
     color: #aaa;
-    padding: 100px;
+    
 }
-
-
 
 
 }
@@ -80,20 +78,8 @@ nav {
 
 section {
     margin: auto;
-    padding: 20px;
+    padding-top: 100px;
     text-align: center;
-
-}
-
-section p:hover {
-    color: #fa3de4;
-
-}
-
-section p {
-    color: white;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 1.5em;
 
 }
 
