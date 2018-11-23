@@ -13,7 +13,6 @@
     background: #ffffff;
     transform-origin: top center;
     animation: animBar 5s ease forwards;
-
 }
 
 @keyframes animBar {
@@ -22,7 +21,7 @@
     }
 
     100% {
-        height: 100%;
+        height: 100vh;
     }
 }
 
@@ -199,7 +198,6 @@ ul li a:hover:not(.active) {
     header {
         display: none;
     }
-
 
 
     /*Le menu version mobile et le menu hamburger n'apparaissent pas*/
