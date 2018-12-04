@@ -149,7 +149,7 @@ li a {
 }
 
 #presentation {
-    border: 7px solid aqua;
+    border: 7px solid #32efc9;
 }
 
 #webdev {
@@ -165,7 +165,7 @@ li a {
 
 ul li a:hover:not(.active) {
 
-    color: aqua;
+    color: #32efc9;
 }
 
 .visible {
@@ -494,28 +494,28 @@ ul li a:hover:not(.active) {
     }
 
     .cube.pres div:nth-child(1) {
-        background: aqua;
+        background: #32efc9;
     }
 
     .cube.pres div:nth-child(2) {
-        background: aqua;
+        background: #32efc9;
     }
 
     .cube.pres div:nth-child(3) {
-        background: aqua;
+        background: #32efc9;
     }
 
     .cube.pres div:nth-child(4) {
-        background: aqua;
+        background: #32efc9;
     }
 
     .cube.pres div:nth-child(5) {
-        background: aqua;
+        background: #32efc9;
     }
 
     .cube.pres div:nth-child(6) {
         background: white;
-        color: aqua;
+        color: #32efc9;
     }
 
     .cube.web div:nth-child(1) {
