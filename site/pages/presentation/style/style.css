@@ -41,7 +41,7 @@ header {
 
 
 button {
-    
+
     border: 2px solid #32efc9;
     border-radius: 5px;
     background-color: transparent;
@@ -124,14 +124,14 @@ ul li a:hover:not(.active) {
 }
 
 .sections > div {
-        border: 3px solid white;
-        width: 130px;
-        height: 130px;
-        text-align: center;
-        padding: 10px;
-        padding-top: 40px;
+    border: 3px solid white;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    padding: 10px;
+    padding-top: 40px;
 
-    }
+}
 
 .sections {
     display: flex;
@@ -139,30 +139,31 @@ ul li a:hover:not(.active) {
     margin: 10px;
 }
 
-h2{
+h2 {
     font-size: 1em;
 }
 
-#corps{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
+#corps {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 
 /* Version Desktop*/
 @media (min-width: 800px) {
 
-    body,html {
+    body,
+    html {
         width: 100%;
         height: 100%;
         margin: 0;
         padding: 0;
         display: flex;
-        
+
     }
-    
-/*       Barre verticale*/
+
+    /*       Barre verticale*/
     .barVert {
         position: absolute;
         content: '';
@@ -178,7 +179,7 @@ h2{
         transform-origin: top center;
         animation: animBar 5s ease forwards;
 
-        }
+    }
 
     @keyframes animBar {
         0% {
@@ -225,14 +226,39 @@ h2{
         background-color: #2f2f2f;
     }
 
-    #corps{
-        width: calc(100vw - 300px);
-        padding: 200px;
-        
-        
-        
+
+
+    #corps {
+        width: calc(300vw - 300px);
+/*        padding: 200px;*/
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: row;
+
     }
-    
+
+    #mask {
+        width: calc(300vh - 300px);
+        overflow: hidden;
+        flex-direction: row;
+
+    }
+
+    .horizontal-scrolling {
+        width: calc(100vw - 300px);
+        height: 100vh;
+
+    }
+
+    .vertical-scrolling {
+        width: calc(100vw - 300px);
+        height: 100vh;
+
+    }
+
     .sections > div {
         border: 5px solid white;
         width: 200px;
@@ -241,28 +267,28 @@ h2{
         text-align: center;
 
     }
-    
+
     .sections {
         display: inline-flex;
         justify-content: space-evenly;
 
-        
+
     }
-    
-    
-    #quiSuisje{
+
+
+    #quiSuisje {
         justify-content: flex-start;
-        
+
     }
-    
-    #parcours{
+
+    #parcours {
         justify-content: center;
     }
-    
-    #softSkills{
+
+    #softSkills {
         justify-content: flex-end;
     }
-    
+
 
     #logo {
         display: block;
@@ -305,7 +331,7 @@ h2{
         outline: none !important;
     }
 
- 
+
 
 
     body {
@@ -634,8 +660,3 @@ h2{
     li div div div {
         border: 5px solid white;
     }
-
-
-
-    
-
