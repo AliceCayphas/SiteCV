@@ -143,12 +143,6 @@ h2 {
     font-size: 1em;
 }
 
-#corps {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-}
-
 
 /* Version Desktop*/
 @media (min-width: 800px) {
@@ -163,22 +157,79 @@ h2 {
 
     }
 
+    main {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #fullPage {
+        width: 300vw;
+        height: 200vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            's1 s2 s3'
+            ' .  . s4';
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.1s;
+        transition-timing-function: linear;
+    }
+    
+    section {
+        margin: 0;
+        padding-left: 310px;
+    }
+   
+    section:nth-of-type(1){ 
+        background-color: #555555;
+;
+        grid-area: s1;
+    }
+
+    section:nth-of-type(2){ 
+        background-color: #555555;
+; 
+        grid-area: s2;
+    }
+
+    section:nth-of-type(3){ 
+        background-color:#555555; 
+        grid-area: s3;
+    }
+
+    section:nth-of-type(4){ 
+        background-color:#555555; 
+        grid-area: s4;
+    }
+
     /*       Barre verticale*/
     .barVert {
         position: absolute;
         content: '';
         width: 5px;
         height: 0;
+        z-index: 99999;
     }
 
 
     .barDown {
         top: 0;
-        left: 55%;
+        left: 300px;
         background: #ffffff;
         transform-origin: top center;
         animation: animBar 5s ease forwards;
-
+   
     }
 
     @keyframes animBar {
@@ -209,86 +260,9 @@ h2 {
     }
 
 
-    .barDown {
-        left: 300px;
-        ;
-    }
-
     header {
         display: none;
     }
-
-    #contenantMenu {
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        background-color: #2f2f2f;
-    }
-
-
-
-    #corps {
-        width: calc(300vw - 300px);
-/*        padding: 200px;*/
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    #mask {
-        width: calc(300vh - 300px);
-        overflow: hidden;
-        flex-direction: row;
-
-    }
-
-    .horizontal-scrolling {
-        width: calc(100vw - 300px);
-        height: 100vh;
-
-    }
-
-    .vertical-scrolling {
-        width: calc(100vw - 300px);
-        height: 100vh;
-
-    }
-
-    .sections > div {
-        border: 5px solid white;
-        width: 200px;
-        height: 200px;
-        font-size: 1.5em;
-        text-align: center;
-
-    }
-
-    .sections {
-        display: inline-flex;
-        justify-content: space-evenly;
-
-
-    }
-
-
-    #quiSuisje {
-        justify-content: flex-start;
-
-    }
-
-    #parcours {
-        justify-content: center;
-    }
-
-    #softSkills {
-        justify-content: flex-end;
-    }
-
 
     #logo {
         display: block;
@@ -297,7 +271,23 @@ h2 {
         height: auto;
         background-color: #2f2f2f;
         margin-top: 20px;
+   
     }
+    
+    #contenantMenu {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #2f2f2f;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 99999;
+        
+    }
+
 
 
     /* DESKTOP: Le menu version mobile et le menu hamburger n'apparaissent pas*/
